@@ -1,0 +1,23 @@
+<div id="preview"></div>
+<p>Search term: <%= @foo %></p>
+<% @pics.each do |picture| %>
+	<a href="<%= FlickRaw.url picture %>"><%= picture.title %></a><br/>
+<% end %>
+<style>
+#preview {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	min-height: 300px;
+	min-width: 300px;
+	max-height: 800px;
+	border: 1px solid red;
+}
+</style>
+<script>
+	$('a').on('click', function(event) {
+		event.preventDefault();
+		//alert($(this).attr('href'));
+		document.getElementById('preview').style.backgroundImage = 'url(' + $(this).attr('href') + ')';
+	});
+</script>
