@@ -28,4 +28,5 @@ Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
 references:
-https://github.com/hanklords/flickraw/blob/master/examples/search.rb
+https://github.com/hanklords/flickraw/blob/master/examples/search.
+http://www.opinionatedprogrammer.com/2011/02/capybara-and-selenium-with-rspec-and-rails-3/
