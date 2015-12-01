@@ -30,3 +30,7 @@ Please feel free to use a different markup language if you do not plan to run
 references:
 https://github.com/hanklords/flickraw/blob/master/examples/search.
 http://www.opinionatedprogrammer.com/2011/02/capybara-and-selenium-with-rspec-and-rails-3/
+
+Run app: ./bin/rails server
+
+Run tests: ./bin/rake spec
