@@ -2,7 +2,7 @@ require 'flickraw'
 
 class WelcomeController < ApplicationController
   def index
-  	@foo = params[:foo]
+  	@foo = params[:search]
 
   	# search for pictures taken within 60 miles of new brunswick, between 1890-1920
 
@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
 	radius = 1
 	args = {}
 	#args[:bbox] = "#{longitude - radius},#{latitude - radius},#{longitude + radius},#{latitude + radius}"
-	args[:text] = params[:foo]
+	args[:text] = params[:search]
 
 	# requires a limiting factor, so let's give it one
 	args[:min_taken_date] = '1890-01-01 00:00:00'
